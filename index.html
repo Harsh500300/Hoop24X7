@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hoops 24/7 | Basketball App</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/spinner.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/script.js" defer></script>
+  <script src="js/carousel.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="head-container">
+      <div class="logo">
+        <a href="/index.html">
+          <img src="assets/images/39319-removebg-preview.png" alt="HoopRate" />
+          <h2>Hoops 24/7</h2>
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a class="head-link" href="/nba.html">NBA</a>
+          </li>
+          <li>
+            <a class="head-link" href="./Highlights/highlight.html">Highlights</a>
+          </li>
+          <li>
+            <a class="head-link" href="/playGame.html">Let's Play</a>
+          </li>
+        </ul>
+    </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    <div class="main-Content">
+
+      <!-- Carousel---- -->
+      <div class="carousel-container">
+        <div class="carousel">
+          <div class="carousel-item">
+            <div class="carousel-caption">
+              <h2>Lakers vs Warriors - Game Highlights</h2>
+              <p>LeBron James leads Lakers to victory with triple-double</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-caption">
+              <h2>Celtics vs Bulls - Top Plays</h2>
+              <p>Tatum's buzzer-beater seals the win for Celtics</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-caption">
+              <h2>NBA Finals 2024</h2>
+              <p>Road to Championship: Playoff Highlights</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-controls">
+          <button type="button" class="carousel-control" onclick="prevSlide()">❮</button>
+          <button type="button" class="carousel-control" onclick="nextSlide()">❯</button>
+        </div>
+      </div>
+
+      <!-- Scorecard Section -->
+      <section class="scorecard-section">
+        <h2 class="section-title">Latest Match Scores</h2>
+        <div class="match-cards-container">
+          <div class="match-card">
+            <div class="match-date">Today, 7:30 PM ET</div>
+            <div class="team-score">
+              <span>Lakers</span>
+              <span class="score">108 - 102</span>
+              <span>Warriors</span>
+            </div>
+            <div>Final Score</div>
+          </div>
+          <div class="match-card">
+            <div class="match-date">Today, 8:00 PM ET</div>
+            <div class="team-score">
+              <span>Celtics</span>
+              <span class="score">95 - 89</span>
+              <span>Bulls</span>
+            </div>
+            <div>Final Score</div>
+          </div>
+          <div class="match-card">
+            <div class="match-date">Today, 9:00 PM ET</div>
+            <div class="team-score">
+              <span>Nets</span>
+              <span class="score">112 - 105</span>
+              <span>76ers</span>
+            </div>
+            <div>Final Score</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="Leagues">
+        <!-- <h2>Basketball</h2> -->
+        <h2>Basketball Leagues across the world</h2>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <!-- <div class="swiper-slide">
+          <a href="#">
+            <img src="assets/images/no-image.jpg" alt="Leagues" />
+          </a>
+          <h4 class="swiper-rating">
+            League Name
+          </h4>
+        </div> -->
+          </div>
+      </section>
+
+      <!-- Stats Section -->
+      <section class="stats-section">
+        <div class="stats-container">
+          <div class="stat-item">
+            <h3>100+</h3>
+            <p>Games Covered</p>
+          </div>
+          <div class="stat-item">
+            <h3>100+</h3>
+            <p>Nba Players</p>
+          </div>
+          <div class="stat-item">
+            <h3>30</h3>
+            <p>NBA Teams</p>
+          </div>
+          <div class="stat-item">
+            <h3>24/7</h3>
+            <p>Live Updates</p>
+          </div>
+        </div>
+      </section>
+      <hr><br>
+      <h4 class="thankText">......Thank You For Visiting......</h4>
+      <br>
+      <hr>
+
+      <div class="spinner"></div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2024 Basketball Scoring App</p>
+  </footer>
+</body>
+
+</html>

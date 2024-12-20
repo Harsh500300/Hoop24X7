@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoops 24/7 | Match-Details</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nbaDetails.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="head-container">
+            <div class="logo">
+                <a href="/index.html" class="logo-link">
+                    <img src="assets/images/39319-removebg-preview.png" alt="HoopRate" width="100px" height="100px" />
+                    <h2>Hoops 24/7</h2>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a class="head-link" href="/nba.html">NBA</a>
+                    </li>
+                    <li>
+                        <a class="head-link" href="./Highlights/highlight.html">Highlights</a>
+                    </li>
+                    <li>
+                        <a class="head-link" href="/playGame.html">Let's Play</a>
+                    </li>
+                </ul>
+        </div>
+        </nav>
+    </header>
+    <main>
+        <div class="match-header">
+            <h1>Basketball</h1>
+            <p>NBA: USA</p>
+        </div>
+
+        <!-- Match Details -->
+        <div class="container mt-4">
+            <div class="row text-center align-items-center">
+                <!-- Team 1 -->
+                <div class="col-md-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/8/8f/Boston_Celtics.svg" class="team-logo"
+                        alt="Boston Celtics Logo">
+                    <h5>Boston Celtics</h5>
+                </div>
+                <!-- Score -->
+                <div class="col-md-4">
+                    <h1>130 - 120</h1>
+                    <p class="text-muted">05.12.2024 01:30</p>
+                    <p class="text-success">Finished</p>
+                </div>
+                <!-- Team 2 -->
+                <div class="col-md-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Logo_of_the_Detroit_Pistons.svg/1024px-Logo_of_the_Detroit_Pistons.svg.png"
+                        class="team-logo" alt="Detroit Pistons Logo">
+                    <h5>Detroit Pistons</h5>
+                </div>
+            </div>
+
+            <!-- Navigation Tabs -->
+            <ul class="nav nav-tabs mt-4" id="matchTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="summary-tab" data-bs-toggle="tab" data-bs-target="#summary"
+                        type="button" role="tab">Summary</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="player-stats-tab" data-bs-toggle="tab" data-bs-target="#player-stats"
+                        type="button" role="tab">Player Statistics</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="stats-tab" data-bs-toggle="tab" data-bs-target="#stats" type="button"
+                        role="tab">Stats</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="lineups-tab" data-bs-toggle="tab" data-bs-target="#lineups"
+                        type="button" role="tab">Lineups</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="match-history-tab" data-bs-toggle="tab" data-bs-target="#match-history"
+                        type="button" role="tab">Match History</button>
+                </li>
+            </ul>
+
+
+            <!-- Tab Content -->
+            <div class="tab-content mt-4" id="matchTabContent">
+                <!-- Summary -->
+                <div class="tab-pane fade show active" id="summary" role="tabpanel">
+                    <!-- Match Highlights -->
+                     
+                    <!-- <div class="match-highlights">
+                        <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg" alt="Match Highlights Thumbnail"
+                            onclick="window.open('https://youtu.be/813weODZY2I?si=-J2DjCoNmU81h2Co')">
+                        <div>
+                            <h4>Match Highlights</h4>
+                            <p class="text-muted">YouTube</p>
+                        </div>
+                    </div> -->
+
+                    <!-- Score Section -->
+                    <div>
+                        <h4 class="section-title">Score</h4>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Team</th>
+                                    <th>Total</th>
+                                    <th>Q1</th>
+                                    <th>Q2</th>
+                                    <th>Q3</th>
+                                    <th>Q4</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Boston Celtics</td>
+                                    <td>130</td>
+                                    <td>39</td>
+                                    <td>33</td>
+                                    <td>31</td>
+                                    <td>27</td>
+                                </tr>
+                                <tr>
+                                    <td>Detroit Pistons</td>
+                                    <td>120</td>
+                                    <td>24</td>
+                                    <td>34</td>
+                                    <td>30</td>
+                                    <td>32</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Player Statistics -->
+                    <div class="table-container">
+                        <h4 class="section-title">Player Statistics - Top 3</h4>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Player</th>
+                                    <th>Team</th>
+                                    <th>PTS</th>
+                                    <th>REB</th>
+                                    <th>AST</th>
+                                    <th>MIN</th>
+                                    <th>FGM</th>
+                                    <th>3PM</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="player-row"><img
+                                        src="https://upload.wikimedia.org/wikipedia/commons/a/ac/No_image_available.svg"
+                                        alt="Player"> Brown J.</td>
+                                    <td>BOS</td>
+                                    <td>28</td>
+                                    <td>6</td>
+                                    <td>9</td>
+                                    <td>38:31</td>
+                                    <td>10</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td class="player-row"><img
+                                        src="https://upload.wikimedia.org/wikipedia/commons/a/ac/No_image_available.svg"
+                                        alt="Player"> Tatum J.</td>
+                                    <td>BOS</td>
+                                    <td>25</td>
+                                    <td>5</td>
+                                    <td>7</td>
+                                    <td>36:45</td>
+                                    <td>9</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td class="player-row"><img
+                                        src="https://upload.wikimedia.org/wikipedia/commons/a/ac/No_image_available.svg"
+                                        alt="Player"> Stewart I.</td>
+                                    <td>DET</td>
+                                    <td>18</td>
+                                    <td>10</td>
+                                    <td>3</td>
+                                    <td>35:20</td>
+                                    <td>7</td>
+                                    <td>2</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--Player tab -->
+                    <div class="tab-pane fade" id="playerstats" role="tabpanel">
+                        <h4 class="section-title">Player Statistics</h4>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Player</th>
+                                    <th>Team</th>
+                                    <th>PTS</th>
+                                    <th>REB</th>
+                                    <th>AST</th>
+                                    <th>MIN</th>
+                                    <th>FGM</th>
+                                    <th>3PM</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Brown J.</td>
+                                    <td>BOS</td>
+                                    <td>28</td>
+                                    <td>6</td>
+                                    <td>9</td>
+                                    <td>38:31</td>
+                                    <td>10</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td>Tatum J.</td>
+                                    <td>BOS</td>
+                                    <td>25</td>
+                                    <td>5</td>
+                                    <td>7</td>
+                                    <td>36:45</td>
+                                    <td>9</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td>Stewart I.</td>
+                                    <td>DET</td>
+                                    <td>18</td>
+                                    <td>10</td>
+                                    <td>3</td>
+                                    <td>35:20</td>
+                                    <td>7</td>
+                                    <td>2</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Player Statistics -->
+                <div class="tab-pane fade" id="player-stats" role="tabpanel">
+                    <h4 class="section-title">Player Statistics</h4>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Player</th>
+                                <th>Team</th>
+                                <th>PTS</th>
+                                <th>REB</th>
+                                <th>AST</th>
+                                <th>MIN</th>
+                                <th>FGM</th>
+                                <th>3PM</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Brown J.</td>
+                                <td>BOS</td>
+                                <td>28</td>
+                                <td>6</td>
+                                <td>9</td>
+                                <td>38:31</td>
+                                <td>10</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>Tatum J.</td>
+                                <td>BOS</td>
+                                <td>25</td>
+                                <td>5</td>
+                                <td>7</td>
+                                <td>36:45</td>
+                                <td>9</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>Stewart I.</td>
+                                <td>DET</td>
+                                <td>18</td>
+                                <td>10</td>
+                                <td>3</td>
+                                <td>35:20</td>
+                                <td>7</td>
+                                <td>2</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Stats -->
+                <div class="tab-pane fade" id="stats" role="tabpanel">
+                    <h4 class="section-title">Stats Section</h4>
+                    <p>Stats details will go here.</p>
+                </div>
+
+                <!-- Lineups -->
+                <div class="tab-pane fade" id="lineups" role="tabpanel">
+                    <h4 class="section-title">Lineups</h4>
+                    <p>Lineup details will go here.</p>
+                </div>
+
+                <!-- Match History -->
+                <div class="tab-pane fade" id="match-history" role="tabpanel">
+                    <h4 class="section-title">Match History</h4>
+                    <p>Match history details will go here.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 Basketball Scoring App</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script> -->
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-beta1/js/bootstrap.min.js"></script> -->
+</body>
+
+</html>
