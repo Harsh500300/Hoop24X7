@@ -1,0 +1,55 @@
+main {
+    background-color: #0f1e2d;
+    color: white;
+    min-height: 100vh;
+}
+
+.card {
+    width: 100%;
+    background-color: #1a2b3d;
+    border: none;
+    margin-bottom: 20px;
+    color: #ccc;
+}
+
+.card-header {
+    background-color: #14212b;
+    border-bottom: 1px solid #2a3b4c;
+    color: white;
+}
+
+.tab-content h2 {
+    color: white;
+}
+
+.team {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.score {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.quarters {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.logo-link {
+    text-decoration: none;
+}
+
+.head-link {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #1a2b3d;
+    color: #ccc;
+    border-color: #1a2b3d #1a2b3d #0f1e2d;
+}

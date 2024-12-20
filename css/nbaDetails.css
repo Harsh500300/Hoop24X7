@@ -1,0 +1,60 @@
+main {
+    background-color: #f4f4f9;
+    min-height: 100vh;
+}
+
+.match-header {
+    background-color: #0d1117;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.team-logo {
+    width: 60px;
+}
+
+.section-title {
+    color: #0d1117;
+    font-weight: bold;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.match-highlights {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.match-highlights img {
+    width: 200px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.table-container {
+    margin-top: 20px;
+}
+
+.player-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.player-row img {
+    width: 30px;
+    border-radius: 50%;
+}
+
+.logo-link {
+    text-decoration: none;
+}
+
+.head-link {
+    color: white;
+    text-decoration: none;
+}
